@@ -19,21 +19,21 @@ const Navbar = () => {
     }, []);
 
     return (
-        <header
-            className={cn(
-                "sticky top-0 z-50 w-full transition-colors duration-300",
-                scrolled && "border-b border-white/10 bg-black/60 backdrop-blur-xl",
-            )}
-        >
-            <nav className="mx-auto flex h-16 max-w-container items-center justify-between px-5 lg:px-10">
+        <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:px-6 sm:pt-5">
+            <nav
+                className={cn(
+                    "relative mx-auto flex h-14 max-w-5xl items-center justify-between rounded-2xl border border-white/10 bg-white/[0.06] px-4 backdrop-blur-xl transition-all duration-300 sm:px-5",
+                    scrolled && "border-white/15 bg-black/50 shadow-[0_8px_30px_rgba(0,0,0,0.35)]",
+                )}
+            >
                 <Link href="/" className="flex items-center gap-2">
-                    <Logo className="size-7" />
-                    <span className="font-display text-lg font-bold tracking-tight">
+                    <Logo className="size-6" />
+                    <span className="font-display text-base font-bold tracking-tight">
                         Playground
                     </span>
                 </Link>
 
-                <ul className="hidden items-center gap-8 md:flex">
+                <ul className="hidden items-center gap-7 md:flex">
                     {NAV_LINKS.map((link) => (
                         <li key={link.title}>
                             <Link
@@ -70,32 +70,32 @@ const Navbar = () => {
                 >
                     {open ? <X className="size-5" /> : <Menu className="size-5" />}
                 </button>
-            </nav>
 
-            {open && (
-                <div className="border-t border-white/10 bg-black/95 px-5 pb-6 pt-4 backdrop-blur-xl md:hidden">
-                    <ul className="flex flex-col gap-1">
-                        {NAV_LINKS.map((link) => (
-                            <li key={link.title}>
-                                <Link
-                                    href={link.href}
-                                    onClick={() => setOpen(false)}
-                                    className="block py-2.5 text-white/70 transition-colors hover:text-white"
-                                >
-                                    {link.title}
-                                </Link>
-                            </li>
-                        ))}
-                    </ul>
-                    <Link
-                        href="#cta"
-                        onClick={() => setOpen(false)}
-                        className="mt-4 block rounded-full bg-white py-2.5 text-center text-sm font-medium text-black"
-                    >
-                        Get Started
-                    </Link>
-                </div>
-            )}
+                {open && (
+                    <div className="absolute inset-x-0 top-[calc(100%+10px)] rounded-2xl border border-white/10 bg-black/80 p-4 shadow-[0_8px_30px_rgba(0,0,0,0.35)] backdrop-blur-xl md:hidden">
+                        <ul className="flex flex-col gap-1">
+                            {NAV_LINKS.map((link) => (
+                                <li key={link.title}>
+                                    <Link
+                                        href={link.href}
+                                        onClick={() => setOpen(false)}
+                                        className="block rounded-lg px-3 py-2.5 text-white/70 transition-colors hover:bg-white/5 hover:text-white"
+                                    >
+                                        {link.title}
+                                    </Link>
+                                </li>
+                            ))}
+                        </ul>
+                        <Link
+                            href="#cta"
+                            onClick={() => setOpen(false)}
+                            className="mt-3 block rounded-full bg-white py-2.5 text-center text-sm font-medium text-black"
+                        >
+                            Get Started
+                        </Link>
+                    </div>
+                )}
+            </nav>
         </header>
     );
 };

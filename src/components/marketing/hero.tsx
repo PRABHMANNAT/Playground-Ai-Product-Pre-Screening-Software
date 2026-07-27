@@ -54,11 +54,6 @@ const Hero = () => {
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                 className="mx-auto flex w-full max-w-3xl flex-col items-center text-center"
             >
-                <span className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs text-white/70 backdrop-blur-md">
-                    <span className="size-1.5 rounded-full bg-emerald-400" />
-                    Now generating in under a minute
-                </span>
-
                 <h1 className="display-tight font-display text-[2.6rem] font-bold sm:text-6xl lg:text-[4rem]">
                     Design the physical world
                     <br />
