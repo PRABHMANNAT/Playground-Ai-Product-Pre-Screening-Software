@@ -16,7 +16,7 @@ interface MetadataProps {
 }
 
 export const generateMetadata = ({
-    title = `Morphic · Design the physical world`,
+    title = `Playground · Design the physical world`,
     description = `Describe a product in plain words and get back a textured, watertight 3D model you can refine, export, and manufacture. No CAD required.`,
     icons = [
         {

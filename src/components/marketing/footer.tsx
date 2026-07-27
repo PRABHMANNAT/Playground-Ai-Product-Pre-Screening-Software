@@ -9,7 +9,7 @@ const Footer = () => (
                 <Link href="/" className="flex items-center gap-2">
                     <Logo className="size-7" />
                     <span className="font-display text-lg font-bold tracking-tight">
-                        Morphic
+                        Playground
                     </span>
                 </Link>
                 <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/50">
@@ -43,7 +43,7 @@ const Footer = () => (
 
         <div className="mt-16 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 sm:flex-row">
             <p className="text-xs text-white/35">
-                © {new Date().getFullYear()} Morphic. All rights reserved.
+                © {new Date().getFullYear()} Playground. All rights reserved.
             </p>
             <p className="text-xs text-white/35">Built for people who make real things.</p>
         </div>

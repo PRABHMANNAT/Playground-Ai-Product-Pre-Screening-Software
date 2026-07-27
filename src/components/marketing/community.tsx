@@ -6,7 +6,7 @@ const Community = () => (
         <Container>
             <p className="text-xs uppercase tracking-[0.2em] text-white/35">Community</p>
             <h2 className="display-tight mt-4 font-display text-4xl font-bold lg:text-5xl">
-                Made with Morphic.
+                Made with Playground.
             </h2>
             <p className="mt-5 max-w-xl text-[15px] text-white/55">
                 A slice of what people are building. Hover a tile to reveal the raw mesh.

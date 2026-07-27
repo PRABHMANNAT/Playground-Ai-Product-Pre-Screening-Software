@@ -29,7 +29,7 @@ const Navbar = () => {
                 <Link href="/" className="flex items-center gap-2">
                     <Logo className="size-7" />
                     <span className="font-display text-lg font-bold tracking-tight">
-                        Morphic
+                        Playground
                     </span>
                 </Link>
 
