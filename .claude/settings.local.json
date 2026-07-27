@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(npm install *)",
+      "Bash(pnpm --version)",
+      "Bash(pnpm install *)",
+      "Bash(pnpm approve-builds *)",
+      "Bash(ffmpeg -version)",
+      "Bash(rm -f src/components/marketing/*.tsx && rm -f src/constants/plans.ts src/constants/links.ts src/constants/countries.ts src/constants/features.ts && ls src/components/marketing src/constants)",
+      "Bash(pnpm exec *)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(ls -la \"/c/Users/HP/Downloads/hf_20260324_024928_1efd0b0d-6c02-45a8-8847-1030900c4f63.mp4\" 2>&1)",
+      "Bash(mkdir -p public/videos && cp \"/c/Users/HP/Downloads/hf_20260324_024928_1efd0b0d-6c02-45a8-8847-1030900c4f63.mp4\" public/videos/hero.mp4 && ls -la public/videos/)",
+      "Bash(gh auth *)",
+      "Bash(git --version)",
+      "Bash(git ls-remote *)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}

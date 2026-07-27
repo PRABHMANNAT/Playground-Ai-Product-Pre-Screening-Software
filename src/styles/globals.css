@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 4%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 62%;
+    --accent: 0 0% 12%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14%;
+    --input: 0 0% 14%;
+    --ring: 0 0% 60%;
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "ss01", "cv01";
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--foreground) / 0.15);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+/* Tight optical tracking on the display face, matching large-format type. */
+.display-tight {
+  letter-spacing: -0.06em;
+  line-height: 0.98;
+}
+
+/* ---- Hero backdrop -------------------------------------------------------
+   A drifting mesh-gradient that stands in for (and sits behind) the hero
+   video. If /videos/hero.mp4 is absent, this is what you see; when it loads,
+   the video covers it. Either way the hero is never a flat black rectangle. */
+.mesh-drift {
+  background:
+    radial-gradient(40rem 30rem at 22% 18%, rgba(64, 104, 255, 0.32), transparent 60%),
+    radial-gradient(34rem 26rem at 78% 26%, rgba(150, 78, 255, 0.26), transparent 62%),
+    radial-gradient(38rem 30rem at 58% 76%, rgba(0, 168, 224, 0.24), transparent 64%),
+    radial-gradient(30rem 24rem at 12% 74%, rgba(255, 106, 61, 0.16), transparent 60%);
+  filter: blur(28px) saturate(130%);
+  animation: mesh-drift 26s ease-in-out infinite alternate;
+}
+
+@keyframes mesh-drift {
+  0% {
+    transform: scale(1.06) translate3d(0, 0, 0);
+  }
+  50% {
+    transform: scale(1.16) translate3d(-2.5%, -1.5%, 0);
+  }
+  100% {
+    transform: scale(1.1) translate3d(2%, 1.5%, 0);
+  }
+}
+
+/* Film grain over the hero so the gradient doesn't read as banded CSS. */
+.grain::after {
+  content: "";
+  position: absolute;
+  inset: -200%;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.42'/%3E%3C/svg%3E");
+  opacity: 0.16;
+  pointer-events: none;
+  animation: grain-shift 7s steps(6) infinite;
+}
+
+@keyframes grain-shift {
+  0%, 100% { transform: translate(0, 0); }
+  20% { transform: translate(-3%, 2%); }
+  40% { transform: translate(2%, -3%); }
+  60% { transform: translate(-2%, -2%); }
+  80% { transform: translate(3%, 1%); }
+}
+
+/* ---- Marquee (reviews / logo strip) ---- */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee var(--marquee-duration, 60s) linear infinite;
+}
+
+.marquee-track.reverse {
+  animation-direction: reverse;
+}
+
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+/* Edge fade for any horizontally scrolling strip. */
+.edge-fade {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+}
+
+/* Hairline separator with a light bloom at centre. */
+.hairline {
+  position: relative;
+}
+
+.hairline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: radial-gradient(50% 100% at 50% 0%, rgba(255, 255, 255, 0.22) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .mesh-drift,
+  .grain::after,
+  .marquee-track {
+    animation: none !important;
+  }
+}
