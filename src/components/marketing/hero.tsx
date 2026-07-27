@@ -52,7 +52,7 @@ const Hero = () => {
                 initial={{ opacity: 0, y: 18 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-                className="mx-auto flex w-full max-w-3xl flex-col items-center text-center"
+                className="mx-auto mt-10 flex w-full max-w-3xl flex-col items-center text-center sm:mt-16"
             >
                 <h1 className="display-tight font-display text-[2.6rem] font-bold sm:text-6xl lg:text-[4rem]">
                     Design the physical world
