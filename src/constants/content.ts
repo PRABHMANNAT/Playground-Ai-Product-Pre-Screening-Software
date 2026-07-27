@@ -7,172 +7,174 @@
 
 export const NAV_LINKS = [
     { title: "Features", href: "#features" },
-    { title: "Resources", href: "#how-it-works" },
+    { title: "How it works", href: "#how-it-works" },
     { title: "Community", href: "#community" },
     { title: "Pricing", href: "#pricing" },
 ];
 
 export const LOGOS = [
-    "Northwind",
+    "IngenLabs",
+    "Orchestra",
     "Aperture",
-    "Lumen Labs",
-    "Foundry Co",
-    "Verge",
-    "Atlas Works",
+    "SwasthAI",
+    "Waypoint",
+    "AssembleOne",
+    "Forge",
+    "ResidueLabs",
 ];
 
 export const STEPS = [
     {
         step: "01",
-        title: "Say what you want",
+        title: "Describe your idea",
         description:
-            "Write a sentence, or drop in a photo you already have. The model reads silhouette, material, and finish from either one.",
+            "Tell us who it's for and the one decision you're trying to make. Bring a description, a prototype link, a screen recording, or a live product — whatever stage you're at.",
     },
     {
         step: "02",
-        title: "Watch it build",
+        title: "AI tests it first",
         description:
-            "A textured, watertight mesh lands in about a minute. No CAD seat, no retopology pass, no cleanup queue.",
+            "Agents walk through your key user journeys the way a first-time customer would, flagging confusing flows, unclear value, and drop-off points before a single human joins.",
     },
     {
         step: "03",
-        title: "Send it somewhere real",
+        title: "Humans confirm it",
         description:
-            "Export to STL, OBJ, or STEP and go straight into your slicer, your printer, or a manufacturer's quote form.",
+            "Matched participants complete the same tasks. We compare their real behaviour against the AI's findings and hand you a clear report on what to fix next.",
     },
 ];
 
 export const FEATURES = [
     {
-        eyebrow: "Prompt to mesh",
-        title: "Language in, geometry out",
+        eyebrow: "Agent walkthroughs",
+        title: "AI tests your product first",
         description:
-            "Describe a product the way you'd describe it to a colleague. You get back an actual textured mesh you can orbit, measure, and refine — not a picture of one. Iterate as fast as you can retype the sentence.",
+            "Agents move through onboarding, pricing, and your core flows the way a new user would, surfacing the moments where people get stuck or drop off — before you spend budget on human testers.",
         video: "/videos/feature-prompt.mp4",
         span: "lg:col-span-2",
     },
     {
-        eyebrow: "Reference input",
-        title: "Start from a photo",
+        eyebrow: "Matched participants",
+        title: "Real users, targeted to your customer",
         description:
-            "Drop in a sketch, a product shot, or a napkin drawing. Proportions and material cues carry through to the model.",
+            "Tell us who you're building for. We recruit participants who match that profile and give them the same tasks your AI agents just ran.",
         video: "/videos/feature-reference.mp4",
         span: "",
     },
     {
-        eyebrow: "Iteration",
-        title: "Change one thing, keep the rest",
+        eyebrow: "AI vs. human",
+        title: "See where they agree — and where they don't",
         description:
-            "Shorten the handle, swap brushed steel for matte resin, thicken a wall. Edits are local — the rest of the model holds.",
+            "Every finding is compared side by side. When AI predictions and human behaviour diverge, that gap is usually the most important thing in your report.",
         video: "/videos/feature-iterate.mp4",
         span: "",
     },
     {
-        eyebrow: "Materials",
-        title: "Finishes that survive export",
+        eyebrow: "Decision-ready",
+        title: "A report built for one decision",
         description:
-            "PBR maps travel with the mesh, so what you approved on screen is what shows up in your renderer or on the print bed.",
+            "No raw transcripts to sift through. You get a clear verdict on the question you asked, plus the next thing worth testing or changing before you ship.",
         video: "/videos/feature-materials.mp4",
         span: "lg:col-span-2",
     },
 ];
 
 export const COMMUNITY = [
-    { title: "Ribbed ceramic planter", author: "studio.oide" },
-    { title: "Folding camp stool", author: "m.karlsen" },
-    { title: "Desk mic, brushed steel", author: "avery.builds" },
-    { title: "Modular shelf bracket", author: "northfab" },
-    { title: "Pocket dice tower", author: "tabletop.jo" },
-    { title: "Espresso tamper, walnut", author: "kettle&co" },
+    { title: "Onboarding flow", author: "62% dropped before setup" },
+    { title: "Pricing page", author: "Tier names confused testers" },
+    { title: "Core workflow", author: "AI and humans agreed" },
+    { title: "New feature launch", author: "Value unclear to 4 in 10" },
+    { title: "Landing page copy", author: "Message landed clearly" },
+    { title: "Mobile onboarding", author: "3 blocking issues found" },
 ];
 
 export const REVIEWS = [
     {
-        quote: "Mockups used to eat my first two days on any brief. Now the first client call already has something on screen to react to.",
+        quote: "We thought the onboarding flow was broken. Playground showed it wasn't the steps — nobody understood what the product did until screen four.",
         name: "Elena R.",
-        role: "Product Designer",
+        role: "Founder, early-stage SaaS",
         initials: "ER",
     },
     {
-        quote: "I sell small-batch collectables, and the catalogue went from nine items to about forty without hiring a modeller.",
+        quote: "The AI agents flagged three confusing screens in twenty minutes. The human sessions confirmed exactly which one actually mattered.",
         name: "Charlotte G.",
-        role: "Shop Owner",
+        role: "Product Lead",
         initials: "CG",
     },
     {
-        quote: "It removes the fiddly part of the day. I still art-direct every piece — I'm just not pushing vertices for six hours first.",
+        quote: "I run this before every release now. It's the fastest way I've found to tell a product problem from a distribution problem.",
         name: "Youssef M.",
-        role: "3D Artist",
+        role: "Founder",
         initials: "YM",
     },
     {
-        quote: "Freelance budgets are tight and most tools in this space are not. This one earned its line item in the first month.",
+        quote: "As a solo founder I don't have a research team. This is the closest thing I have to one.",
         name: "Anastasia P.",
-        role: "Indie Maker",
+        role: "Indie Founder",
         initials: "AP",
     },
     {
-        quote: "Set dressing for our game used to be the bottleneck. We fill a scene with props in an afternoon now.",
+        quote: "We were about to rebuild our core flow over one loud customer complaint. Playground showed most users actually liked it — we fixed something else instead.",
         name: "Rahul S.",
-        role: "Game Developer",
+        role: "Head of Product",
         initials: "RS",
     },
     {
-        quote: "The slow part of client work is agreeing on a direction. I bring three real options to the kickoff instead of a sketch.",
+        quote: "The gap between what our AI pass predicted and what real users did on the pricing page was the single most useful slide I've shown our board.",
         name: "Duncan A.",
-        role: "Industrial Designer",
+        role: "Founder",
         initials: "DA",
     },
     {
-        quote: "Volume is the whole business for me. Words to a file my slicer accepts, same afternoon — that changed the maths.",
+        quote: "Every sprint we pick one open question and test it here before committing engineering time to it.",
         name: "Stefan L.",
-        role: "Print Seller",
+        role: "Engineering Lead",
         initials: "SL",
     },
     {
-        quote: "I run our university's fabrication club. It got the members who were scared of CAD actually making things.",
+        quote: "It replaced the 'can someone try this and tell me if it makes sense' Slack thread that used to eat a full day.",
         name: "Karina A.",
-        role: "Student Lead",
+        role: "Founder",
         initials: "KA",
     },
     {
-        quote: "Concepting meetings produce decisions now instead of homework. We generate the options while we're still talking.",
+        quote: "Our PMs used to guess which feedback to trust. Now they know whether it's a pattern or one person's opinion.",
         name: "Hao L.",
-        role: "Product Manager",
+        role: "VP Product",
         initials: "HL",
     },
 ];
 
 export const FAQS = [
     {
-        question: "What kinds of things can I make?",
+        question: "What can I test with Playground?",
         answer:
-            "Consumer goods, packaging, furniture, enclosures, wearables, accessories, tabletop pieces, and props. Anything whose form you can describe in a sentence or show in a photo is a reasonable starting point.",
+            "An idea, a prototype, or a live product. Bring a description, a Figma link, a screen recording, or a working URL — Playground works with whatever stage you're at.",
     },
     {
-        question: "Is the output actually manufacturable?",
+        question: "How is this different from asking friends or posting online?",
         answer:
-            "Meshes come out watertight and manifold, which is what slicers and most quoting tools require. For injection moulding or CNC you'll still want an engineer to review draft angles and tolerances — treat it as a very fast first article, not a finished production file.",
+            "Friends aren't your target customer, and forum feedback is self-selected and unstructured. Playground matches participants to the profile you define and runs everyone through the same tasks, so the results are actually comparable.",
     },
     {
-        question: "Do I need to know CAD?",
+        question: "What do the AI agents actually do?",
         answer:
-            "No. Plain language is the interface. If you do know CAD, exports open cleanly in the usual tools, so you can take a generated base mesh and keep working on it however you normally would.",
+            "They walk through the user journeys you flag — onboarding, checkout, a core workflow — the way a first-time user would, and log where they hesitate, misread something, or give up.",
     },
     {
         question: "How does billing work?",
         answer:
-            "Each plan includes a monthly pool of generation credits. One credit is one model generation; refining an existing model costs less than starting a new one. Unused credits roll over for one cycle.",
+            "Each plan includes a set number of validations per month, covering both the AI pass and a matched round of human participants. Larger studies with more participants draw on additional credits.",
     },
     {
-        question: "Who owns what I make?",
+        question: "Who sees the raw session data?",
         answer:
-            "You do. Paid plans include commercial-use rights for everything you generate — sell the prints, ship the product, put it in a client deliverable. We don't claim a licence to your output.",
+            "You do, if you want it. The default report is a summary built around the one decision you told us you needed to make, but every underlying session is available if you want to dig in.",
     },
     {
-        question: "What formats can I export?",
+        question: "Can I use this before I've built anything?",
         answer:
-            "STL and 3MF for printing, OBJ and GLB with textures for rendering and real-time engines, and STEP where downstream CAD work is expected.",
+            "Yes — a description or a clickable prototype is enough for an early pass. Most teams run a validation before writing production code, then again before each major release.",
     },
 ];
 
@@ -180,7 +182,7 @@ export const FOOTER_LINKS = [
     {
         title: "Product",
         links: [
-            { name: "Studio", href: "#" },
+            { name: "Platform", href: "#" },
             { name: "Features", href: "#features" },
             { name: "Pricing", href: "#pricing" },
             { name: "Changelog", href: "#" },

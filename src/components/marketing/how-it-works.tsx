@@ -14,7 +14,7 @@ const StepVisual = ({ index }: { index: number }) => {
                 <div className="absolute inset-0 mesh-drift opacity-50" />
                 <div className="relative w-full max-w-sm rounded-xl bg-white px-4 py-3 shadow-2xl">
                     <p className="text-[13px] leading-snug text-black/80">
-                        a walnut espresso tamper with a knurled grip
+                        why users drop off during signup
                     </p>
                     <div className="mt-3 flex justify-end">
                         <span className="flex size-7 items-center justify-center rounded-full bg-black/10 text-black">
@@ -33,7 +33,7 @@ const StepVisual = ({ index }: { index: number }) => {
                 <div className="absolute inset-0 bg-black/45" />
                 <div className="relative flex items-center gap-2 rounded-full border border-white/15 bg-black/50 px-5 py-2.5 text-sm text-white/85 backdrop-blur-md">
                     <span className="size-1.5 animate-pulse rounded-full bg-emerald-400" />
-                    Generating mesh…
+                    Running AI walkthrough…
                 </div>
             </div>
         );
@@ -42,12 +42,12 @@ const StepVisual = ({ index }: { index: number }) => {
     return (
         <div className="relative flex h-full w-full flex-col items-center justify-center gap-3 p-8">
             <div className="absolute inset-0 mesh-drift opacity-30" />
-            {["STL", "OBJ", "STEP"].map((format) => (
+            {["4 issues found", "3 confirmed by humans", "Report ready"].map((label) => (
                 <span
-                    key={format}
-                    className="relative w-full max-w-[200px] rounded-lg border border-white/15 bg-white/5 px-6 py-2.5 text-center text-sm font-medium text-white/85 backdrop-blur-md"
+                    key={label}
+                    className="relative w-full max-w-[220px] rounded-lg border border-white/15 bg-white/5 px-6 py-2.5 text-center text-sm font-medium text-white/85 backdrop-blur-md"
                 >
-                    {format}
+                    {label}
                 </span>
             ))}
         </div>
@@ -100,7 +100,7 @@ const HowItWorks = () => {
                             How it works
                         </p>
                         <h2 className="display-tight mt-4 font-display text-4xl font-bold lg:text-5xl">
-                            Bring an idea into the real world.
+                            Know before you build the wrong thing.
                         </h2>
                     </motion.div>
 

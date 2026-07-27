@@ -42,7 +42,7 @@ const Reviews = () => {
                 <Container>
                     <p className="text-xs uppercase tracking-[0.2em] text-white/35">Reviews</p>
                     <h2 className="display-tight mt-4 font-display text-4xl font-bold lg:text-5xl">
-                        Loved by people who make things.
+                        Loved by founders who'd rather know.
                     </h2>
                 </Container>
             </div>

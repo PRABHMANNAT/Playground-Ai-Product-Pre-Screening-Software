@@ -7,9 +7,9 @@ import { ArrowUp, Paperclip, AudioLines, LibraryBig } from "lucide-react";
 import { cn } from "@/lib";
 
 const PROMPTS = [
-    "a ribbed ceramic planter with a matte glaze",
-    "a folding camp stool in anodised aluminium",
-    "a walnut espresso tamper with a knurled grip",
+    "why users drop off during signup",
+    "whether our pricing page is clear",
+    "if the new dashboard makes sense",
 ];
 
 const Hero = () => {
@@ -55,14 +55,15 @@ const Hero = () => {
                 className="mx-auto mt-10 flex w-full max-w-3xl flex-col items-center text-center sm:mt-16"
             >
                 <h1 className="display-tight font-display text-[2.6rem] font-bold sm:text-6xl lg:text-[4rem]">
-                    Design the physical world
+                    Validate your product
                     <br />
-                    without opening CAD
+                    before you build it
                 </h1>
 
                 <p className="mt-6 max-w-xl text-balance text-base text-white/65 lg:text-lg">
-                    Describe a product in plain words. Get back a textured, watertight
-                    3D model you can refine, export, and actually manufacture.
+                    Playground runs your idea, prototype, or live product through AI
+                    agents and matched human participants — so you know what's
+                    working before you spend months finding out.
                 </p>
             </motion.div>
 
@@ -93,8 +94,8 @@ const Hero = () => {
                         <input
                             value={value}
                             onChange={(e) => setValue(e.target.value)}
-                            placeholder="A puffy, cloud-shaped water bottle…"
-                            aria-label="Describe a product you want to make"
+                            placeholder="Will new users understand our onboarding?"
+                            aria-label="Describe what you want to validate"
                             className="min-w-0 flex-1 bg-transparent text-[15px] text-black/90 outline-none placeholder:text-black/40 sm:text-base"
                         />
                         <div className="flex items-end justify-between gap-2">
@@ -116,7 +117,7 @@ const Hero = () => {
                             </div>
                             <button
                                 type="submit"
-                                aria-label="Generate model"
+                                aria-label="Start validation"
                                 className="flex size-8 shrink-0 items-center justify-center rounded-full bg-black/10 text-black transition-colors hover:bg-black/15 disabled:opacity-40"
                                 disabled={!value.trim()}
                             >

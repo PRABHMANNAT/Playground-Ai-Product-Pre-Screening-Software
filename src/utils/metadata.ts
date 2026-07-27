@@ -16,8 +16,8 @@ interface MetadataProps {
 }
 
 export const generateMetadata = ({
-    title = `Playground · Design the physical world`,
-    description = `Describe a product in plain words and get back a textured, watertight 3D model you can refine, export, and manufacture. No CAD required.`,
+    title = `Playground · Validate your product before you build it`,
+    description = `Playground tests your idea, prototype, or live product with AI agents and matched human participants, so you know what users understand, value, and will pay for before you spend months finding out.`,
     icons = [
         {
             rel: "icon",
@@ -32,16 +32,16 @@ export const generateMetadata = ({
     ],
     noIndex = false,
     keywords = [
-        "AI 3D model generator",
-        "text to 3D",
-        "prompt to mesh",
-        "3D printing",
-        "product design",
-        "rapid prototyping",
-        "generative design",
-        "STL export",
-        "industrial design",
-        "CAD alternative"
+        "product validation",
+        "AI user testing",
+        "startup validation",
+        "product-market fit",
+        "usability testing",
+        "founder tools",
+        "AI agents testing software",
+        "onboarding testing",
+        "user research platform",
+        "pre-launch testing"
     ],
     author = process.env.NEXT_PUBLIC_AUTHOR_NAME,
     type = "website",

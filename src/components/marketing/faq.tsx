@@ -18,8 +18,8 @@ const FAQ = () => (
                     answered.
                 </h2>
                 <p className="mt-5 max-w-sm text-[15px] text-white/55">
-                    What you need to know about turning a sentence into something you
-                    can hold. Still stuck? Drop us a line.
+                    What you need to know about validating a product before you build
+                    it. Still stuck? Drop us a line.
                 </p>
             </Container>
 

@@ -20,7 +20,7 @@ const CardArt = ({ index }: { index: number }) => {
                         <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-black text-white">
                             <span className="text-sm leading-none">+</span>
                         </span>
-                        <p className="flex-1 truncate text-[13px] text-black/80">matte grey headphones</p>
+                        <p className="flex-1 truncate text-[13px] text-black/80">why users drop off during signup</p>
                         <span className="flex size-6 shrink-0 items-center justify-center rounded-full bg-black text-white">
                             <ArrowUp className="size-3 rotate-90" />
                         </span>
@@ -51,11 +51,10 @@ const CardArt = ({ index }: { index: number }) => {
         return (
             <div className="relative flex h-full w-full flex-col items-center justify-center gap-2 p-6">
                 <div className="absolute inset-0 mesh-drift opacity-40" />
-                {["make the base wider", "add soft edges", "switch to matte finish"].map((t, i) => (
+                {["AI: unclear pricing tiers", "Human: confirmed confusing", "Verdict: rename tiers"].map((t) => (
                     <div
                         key={t}
                         className="relative rounded-lg border border-white/15 bg-white/[0.06] px-4 py-2 text-[13px] text-white/85 backdrop-blur-md"
-                        style={{ transform: `translateY(${i === 1 ? "0" : "0"})` }}
                     >
                         {t}
                     </div>
@@ -66,12 +65,12 @@ const CardArt = ({ index }: { index: number }) => {
     return (
         <div className="relative flex h-full w-full flex-col items-center justify-center gap-3 p-6">
             <div className="absolute inset-0 mesh-drift opacity-30" />
-            {["STL", "OBJ", "STEP"].map((format) => (
+            {["Verdict: ship it", "2 issues found", "Report ready"].map((label) => (
                 <span
-                    key={format}
-                    className="relative w-full max-w-[180px] rounded-lg border border-white/15 bg-white/5 px-6 py-2.5 text-center text-sm font-medium text-white/85 backdrop-blur-md"
+                    key={label}
+                    className="relative w-full max-w-[200px] rounded-lg border border-white/15 bg-white/5 px-6 py-2.5 text-center text-sm font-medium text-white/85 backdrop-blur-md"
                 >
-                    {format}
+                    {label}
                 </span>
             ))}
         </div>
@@ -149,10 +148,10 @@ const Features = () => {
             >
                 <p className="text-xs uppercase tracking-[0.2em] text-white/45">Features</p>
                 <h2 className="display-tight mt-4 font-display text-4xl font-bold lg:text-5xl">
-                    Everything from prompt to production.
+                    Everything from idea to decision.
                 </h2>
                 <p className="mt-4 text-[15px] text-white/55">
-                    One studio for the whole creative loop.
+                    One platform for the whole validation loop.
                 </p>
             </motion.div>
 

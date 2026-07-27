@@ -10,11 +10,12 @@ const CTA = () => (
                 <div className="absolute inset-0 -z-10 bg-[radial-gradient(100%_100%_at_50%_0%,transparent_30%,rgba(0,0,0,0.7)_100%)]" />
 
                 <h2 className="display-tight mx-auto max-w-2xl font-display text-4xl font-bold lg:text-5xl">
-                    Try the studio in under a minute.
+                    Test your idea before you build it.
                 </h2>
                 <p className="mx-auto mt-6 max-w-xl text-[15px] text-white/65 lg:text-base">
-                    Describe a product, watch it become a real 3D model, then export it.
-                    Monthly credits, unlimited iteration, commercial rights included.
+                    Describe your product, the customer it's for, and the decision you
+                    need to make. Get AI findings today, human-confirmed results
+                    within days.
                 </p>
 
                 <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -22,7 +23,7 @@ const CTA = () => (
                         href="#"
                         className="group inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-medium text-black transition-transform hover:scale-[1.03] active:scale-95"
                     >
-                        Try the studio
+                        Start a validation
                         <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
                     </Link>
                     <Link

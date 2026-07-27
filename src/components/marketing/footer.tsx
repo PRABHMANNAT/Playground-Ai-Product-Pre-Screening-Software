@@ -13,8 +13,8 @@ const Footer = () => (
                     </span>
                 </Link>
                 <p className="mt-5 max-w-xs text-sm leading-relaxed text-white/50">
-                    Describe a product, get a real textured 3D model, export a file you
-                    can manufacture — all in one studio.
+                    Test your product with AI agents and real, matched users — so you
+                    know what to fix before you ship it.
                 </p>
             </div>
 
@@ -45,7 +45,7 @@ const Footer = () => (
             <p className="text-xs text-white/35">
                 © {new Date().getFullYear()} Playground. All rights reserved.
             </p>
-            <p className="text-xs text-white/35">Built for people who make real things.</p>
+            <p className="text-xs text-white/35">Built for teams who'd rather know than guess.</p>
         </div>
     </footer>
 );
